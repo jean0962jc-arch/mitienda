@@ -338,7 +338,7 @@ footer {
   text-align: center;
 }
 .eslogan {
-  font-size: 1.1em;
+  font-size: 0.75em;
   font-style: italic;
   color: #a8f0c6;
   font-weight: 300;
@@ -351,8 +351,8 @@ footer {
 .header-derecha {
   position: absolute;
   right: 20px;
-  bottom: 15px;
-  max-width: 250px;
+  bottom: 5px;
+  max-width: 200px;
 }
 
 @media (max-width: 768px) {
