@@ -15,7 +15,8 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #1a3c5e, #27ae60);
+  background: linear-gradient(135deg, rgba(26,60,94,0.85), rgba(39,174,96,0.85)),
+  url('fondo.png') center/cover no-repeat;
   color: white;
   padding: 50px 30px;
   text-align: center;
@@ -290,4 +291,172 @@ footer {
   color: #8aaccc;
   font-size: 0.85em;
   line-height: 1.7;
+}
+/* CENTRAR BOTÓN PAYPAL */
+#paypal-container-YRMEBYF64SSNN,
+#paypal-container-PR83V8GSSZ5W8,
+#paypal-container-XD8PZWGCC6T7Y,
+#paypal-container-FQFU6CFXJFNAY {
+  margin: 0 auto;
+  width: 300px;
+}
+
+/* QUITAR PUNTOS DE LA LISTA */
+.detalle-lista {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.detalle-lista li {
+  padding: 6px 0;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+  font-size: 0.9em;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+.detalle-lista {
+  max-width: 400px;
+  margin: 0 auto 25px;
+}
+.detalle-icono img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+.detalle-icono {
+  font-size: 6em;
+  margin-bottom: 15px;
+}
+.detalle-descripcion {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.eslogan {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #a8f0c6;
+  font-weight: 300;
+  line-height: 1.4;
+  border-left: 2px solid #a8f0c6;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.header-derecha {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  max-width: 250px;
+}
+
+header {
+  position: relative;
+}body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  background: linear-gradient(135deg, rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+  url('fondo.png') center/cover fixed no-repeat;
+}
+/* FOOTER */
+.footer-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-sociales a {
+  color: #a8f0c6;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: white;
+}
+
+.avisos-legales {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.avisos-legales a {
+  color: #6a8fad;
+  text-decoration: none;
+  font-size: 0.85em;
+  transition: color 0.3s;
+}
+
+.avisos-legales a:hover {
+  color: #a8f0c6;
+}
+/* PÁGINAS LEGALES */
+.legal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.legal-contenido {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.legal-contenido h2 {
+  color: #1a3c5e;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.legal-fecha {
+  color: #999;
+  font-size: 0.85em;
+  margin-bottom: 30px;
+}
+
+.legal-contenido h3 {
+  color: #1a3c5e;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.legal-contenido p, .legal-contenido ul {
+  color: #555;
+  line-height: 1.8;
+}
+
+.legal-contenido ul {
+  padding-left: 20px;
+}
+
+.legal-contenido ul li {
+  margin-bottom: 8px;
+}
+.legal-contenido ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-contenido ul li::before {
+  content: "✅ ";
 }
