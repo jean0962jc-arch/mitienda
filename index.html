@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAnJ69P388KOFCUZ4VgydgeFK_R6NvPwSN-dbrYE0SC0ZEz5JNsPArLDcrWW6f62e5CzP89MZbveAtqs0&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+</head>
 <head>
   <meta charset="UTF-8">
   <title>Plantillas Financieras Pro</title>
@@ -9,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="estilos.css">>
 </head>
 <body>
@@ -22,6 +25,9 @@
       <a href="#beneficios">Beneficios</a>
       <a href="#contacto">Contacto</a>
     </nav>
+    <div class="header-derecha">
+  <p class="eslogan">Controla cada centavo de tu empresa fácilmente</p>
+</div>
   </header>
 
   <!-- PRODUCTOS -->
@@ -34,7 +40,8 @@
         <h3>Control de Presupuesto</h3>
         <p>Organiza tus ingresos y gastos mensuales fácilmente</p>
         <p class="precio">$9.99</p>
-        <button>Comprar ahora</button>
+        <a href="presupuesto.html"><button>Comprar ahora</button></a>
+</script>
       </div>
 
       <div class="tarjeta">
@@ -42,7 +49,7 @@
         <h3>Tracker de Inversiones</h3>
         <p>Seguimiento de tus inversiones y rendimientos</p>
         <p class="precio">$14.99</p>
-        <button>Comprar ahora</button>
+        <a href="inversiones.html"><button>Comprar ahora</button></a>
       </div>
 
       <div class="tarjeta">
@@ -50,7 +57,7 @@
         <h3>Plan de Ahorro</h3>
         <p>Calcula cuánto ahorrar para tus metas financieras</p>
         <p class="precio">$7.99</p>
-        <button>Comprar ahora</button>
+        <a href="ahorro.html"><button>Comprar ahora</button></a>
       </div>
 
       <div class="tarjeta">
@@ -58,7 +65,7 @@
         <h3>Control de Deudas</h3>
         <p>Planifica cómo eliminar tus deudas más rápido</p>
         <p class="precio">$9.99</p>
-        <button>Comprar ahora</button>
+        <a href="deudas.html"><button>Comprar ahora</button></a>
       </div>
 
     </div>
@@ -120,9 +127,22 @@
   </section>
 
   <!-- PIE DE PAGINA -->
-  <footer>
+<footer>
+  <div class="footer-contenido">
     <p>© 2025 Plantillas Financieras Pro — Todos los derechos reservados</p>
-  </footer>
+    
+    <div class="redes-sociales">
+      <a href="https://instagram.com/TU_USUARIO" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/TU_USUARIO" target="_blank"><i class="fab fa-x-twitter"></i> Twitter/X</a>
+      <a href="https://facebook.com/TU_USUARIO" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
 
+    <div class="avisos-legales">
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="reembolso.html">Política de reembolso</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
