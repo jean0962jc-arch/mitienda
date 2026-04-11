@@ -1,111 +1,159 @@
+/* FUENTES DE GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 * {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f4f8;
 }
 
 /* HEADER */
 header {
-  background-color: #1a3c5e;
+  background: linear-gradient(135deg, #1a3c5e, #27ae60);
   color: white;
-  padding: 30px;
+  padding: 50px 30px;
   text-align: center;
 }
 
+header h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 header p {
-  color: #a8c4e0;
-  margin: 5px 0 15px;
+  color: #d4f1e4;
+  font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #27ae60;
+  color: #a8f0c6;
 }
 
 /* SECCIONES */
 section {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 section h2 {
   color: #1a3c5e;
-  font-size: 1.8em;
-  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #27ae60;
+  margin: 10px auto 30px;
+  border-radius: 2px;
 }
 
 /* PRODUCTOS */
 .productos {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
 .tarjeta {
   background: white;
-  border-radius: 12px;
-  padding: 25px;
-  width: 210px;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 220px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #1a3c5e, #27ae60);
 }
 
 .tarjeta:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
 }
 
 .icono {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 3.5em;
+  margin-bottom: 15px;
 }
 
 .tarjeta h3 {
   color: #1a3c5e;
-  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .tarjeta p {
-  color: #666;
-  font-size: 0.9em;
+  color: #888;
+  font-size: 0.85em;
+  line-height: 1.6;
 }
 
 .precio {
   color: #27ae60 !important;
-  font-size: 1.4em !important;
-  font-weight: bold;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  margin: 12px 0 !important;
 }
 
 .tarjeta button {
-  background-color: #1a3c5e;
+  background: linear-gradient(135deg, #1a3c5e, #27ae60);
   color: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
   width: 100%;
-  font-size: 1em;
+  font-size: 0.95em;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.3s, transform 0.2s;
 }
 
 .tarjeta button:hover {
-  background-color: #27ae60;
+  opacity: 0.9;
+  transform: scale(1.03);
 }
 
 /* SOBRE MI */
 #sobre-mi {
-  background-color: #1a3c5e;
+  background: linear-gradient(135deg, #1a3c5e, #0f2338);
   color: white;
 }
 
@@ -113,17 +161,27 @@ section h2 {
   color: white;
 }
 
+#sobre-mi h2::after {
+  background: #27ae60;
+}
+
 .sobre-mi-contenido {
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.9;
+  color: #c8dff0;
 }
 
 .icono-grande {
   font-size: 5em;
+  margin-bottom: 15px;
 }
 
 /* CONTACTO */
+#contacto {
+  background-color: #f8fbff;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -134,35 +192,102 @@ section h2 {
 
 .formulario input,
 .formulario textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
   font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: #27ae60;
 }
 
 .formulario textarea {
-  height: 120px;
+  height: 130px;
   resize: vertical;
 }
 
 .formulario button {
-  background-color: #1a3c5e;
+  background: linear-gradient(135deg, #1a3c5e, #27ae60);
   color: white;
   border: none;
   padding: 14px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1em;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.3s, transform 0.2s;
 }
 
 .formulario button:hover {
-  background-color: #27ae60;
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
 /* FOOTER */
 footer {
-  background-color: #1a3c5e;
-  color: #a8c4e0;
+  background: #0f2338;
+  color: #6a8fad;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  font-size: 0.9em;
+}
+/* BENEFICIOS */
+#beneficios {
+  background: linear-gradient(135deg, #1a3c5e, #0f2338);
+}
+
+#beneficios h2 {
+  color: white;
+}
+
+#beneficios h2::after {
+  background: #27ae60;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.beneficio {
+  background: rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 30px 25px;
+  width: 230px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.beneficio:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.12);
+}
+
+.icono-beneficio {
+  font-size: 2.8em;
+  margin-bottom: 12px;
+}
+
+.beneficio h3 {
+  color: #a8f0c6;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.beneficio p {
+  color: #8aaccc;
+  font-size: 0.85em;
+  line-height: 1.7;
 }
