@@ -507,3 +507,26 @@ header {
     padding-top: 10px;
   }
 }
+.boton-gumroad {
+  display: block;
+  max-width: 300px;
+  margin: 10px auto;
+  background: linear-gradient(135deg, #1a3c5e, #27ae60);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.boton-gumroad:hover {
+  opacity: 0.9;
+}
